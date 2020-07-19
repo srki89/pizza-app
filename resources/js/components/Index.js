@@ -4,7 +4,7 @@ import { Cookies } from 'react-cookie';
 import Order from './Order';
 
 
-const APIroute_Offer = '+/api/pizzas';
+const APIroute_Offer = '/api/pizzas';
 const APIroute_Config = '/api/configuration';
 const APIroute_AdditionalValutes = '/api/additional_valutes';
 

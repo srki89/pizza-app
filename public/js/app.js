@@ -75469,9 +75469,9 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var APIroute_Offer = 'http://yummi-pizza.test/api/pizzas';
-var APIroute_Config = 'http://yummi-pizza.test/api/configuration';
-var APIroute_AdditionalValutes = 'http://yummi-pizza.test/api/additional_valutes';
+var APIroute_Offer = '/api/pizzas';
+var APIroute_Config = '/api/configuration';
+var APIroute_AdditionalValutes = '/api/additional_valutes';
 var cookies = new react_cookie__WEBPACK_IMPORTED_MODULE_2__["Cookies"]();
 
 var Index = /*#__PURE__*/function (_Component) {
@@ -75593,7 +75593,6 @@ var Index = /*#__PURE__*/function (_Component) {
           additionalValutesSumOfBill: additionalValutes
         });
       } else {
-        console.log("ok");
         cookies.remove('cart');
         this.setState({
           sumOfBill: 0,
@@ -75949,7 +75948,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var APIroute_saveOrder = 'http://yummi-pizza.test/api/order';
+var APIroute_saveOrder = '/api/order';
 var StatusOK = 1;
 var StatusValidateError = 2;
 var StatusError = 0;
@@ -76055,7 +76054,6 @@ var Order = /*#__PURE__*/function (_Component) {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            sum: this.props.sum,
             pizzas: this.props.pizzas,
             fullName: this.state.name,
             email: this.state.email,
@@ -76117,9 +76115,7 @@ var Order = /*#__PURE__*/function (_Component) {
           role: "document"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_2__["default"].Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_2__["default"].Title, {
           className: "text-info"
-        }, "Opsss..Please try again later!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_2__["default"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "text-info"
-        }, "We currentl have a problem with orders."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, "Opsss..Your order was not confirmed!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_2__["default"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "text-info"
         }, "Phone Number: +49123123123.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_2__["default"].Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
           onClick: this.props.closeFunc.bind(this),
