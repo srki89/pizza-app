@@ -4,9 +4,9 @@ import { Cookies } from 'react-cookie';
 import Order from './Order';
 
 
-const APIroute_Offer = 'http://yummi-pizza.test/api/pizzas';
-const APIroute_Config = 'http://yummi-pizza.test/api/configuration';
-const APIroute_AdditionalValutes = 'http://yummi-pizza.test/api/additional_valutes';
+const APIroute_Offer = '/api/pizzas';
+const APIroute_Config = '/api/configuration';
+const APIroute_AdditionalValutes = '/api/additional_valutes';
 
 const cookies = new Cookies();
 
