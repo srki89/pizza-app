@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-const APIroute_saveOrder = 'http://yummi-pizza.test/api/order';
+const APIroute_saveOrder = '/api/order';
 
 const StatusOK = 1;
 const StatusValidateError = 2;
