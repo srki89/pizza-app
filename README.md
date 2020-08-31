@@ -27,12 +27,6 @@ You can start the test with command:
 php artisan test
 ```
 
-## Demo 
-
-[Yummi Pizza](http://yummi-pizza-app.herokuapp.com/) 
-
-PHP 7.2.24
-
 ## Author 
 
 Srđan Bojić 
